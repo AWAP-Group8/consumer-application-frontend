@@ -1,0 +1,42 @@
+.container-order {
+  .order {
+    display: flex;
+
+  }
+
+  .order-details {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    .my-card {
+      width: 50%;
+      border-radius: 0;
+      cursor: pointer;
+
+      span.bolder {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.all,
+.sent,
+.received {
+  flex: 1;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 40px;
+  text-align: center;
+  margin: 20px;
+  color: #409eff;
+  background-color: #ecf5ff;
+  border-radius: 10px;
+  cursor: pointer;
+  &:hover {
+    color: #fff;
+    background-color: #409eff;
+  }
+}

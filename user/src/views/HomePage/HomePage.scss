@@ -1,0 +1,97 @@
+.home-container {
+    height: 100%;
+    .background-pic {
+        width: 100%;
+        height: 50%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .container-bottom {
+        display: flex;
+        width: 100%;
+        height: 50%;
+
+        .left {
+            width: 45%;
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+            .input-container {
+                width: 65%;
+                margin-left: 80px;
+
+                h1 {
+                    font-size: 30px;
+                    color: #333;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .right {
+            display: flex;
+            padding-top: 20px;
+            flex: 1;
+            height: 100%;
+            padding-top: 100px;
+
+            .link-container-right {
+                margin-left: 20%;
+            }
+
+            .history,
+            .notification,
+            .send-parcel,
+            .my-profile,
+            .support,
+            .deletion {
+                width: 100%;
+                height: 38px;
+                margin: 30px;
+                color: #333;
+                border-bottom: solid 1px rgba(179, 168, 150, .6);
+                cursor: pointer;
+            }
+
+            .right-arrow {
+                float: right;
+                margin-right: 5px;
+            }
+
+            .icon {
+                color: rgb(229, 131, 8);
+            }
+            ul>li:hover {
+                color: rgb(229, 131, 8);
+            }
+        }
+
+        @media (max-width: 1024px) {
+          display: block;
+          .left {
+            width: 100%;
+            height: auto;
+            padding: 50px 0;
+            justify-content: center;
+            h1 {
+              text-align: center;
+            }
+            .input-container {
+              margin: 0;
+            }
+          }
+          .right {
+            width: 100%;
+            height: auto;
+            padding: 50px 0;
+            justify-content: center;
+          }
+        }
+    }
+
+}

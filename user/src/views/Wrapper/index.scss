@@ -1,0 +1,109 @@
+.my-infomation {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 6px 5px 6px -3px rgba(0, 0, 0, 0.2);
+
+    .nav-left {
+      margin: 10px;
+      width: 20%;
+      color: rgb(229, 131, 8);
+
+      .logo {
+        cursor: pointer;
+        width: 155px;
+        display: inline-block;
+        margin-left: 45px;
+        font-size: 26px;
+        font-weight: 600;
+        -webkit-text-stroke: 1px #f88;
+
+        img {
+          width: 35px;
+          margin-top: 5px;
+          margin-left: 4px;
+        }
+
+        .gogoship {
+          margin-top: -26px;
+
+          .gogo {
+            font-size: 16px;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    margin-top: 20px;
+    flex: 1;
+
+    .sidebar {
+      width: 250px;
+      margin-right: 20px;
+      margin-left: 10px;
+
+      ul {
+        height: 88px;
+        line-height: 98px;
+        &>li {
+          cursor: pointer;
+          text-align: center;
+          flex-grow: 1;
+          color: #333;
+          font-size: 18px;
+          font-weight: 600;
+          background-color: rgba(179, 168, 150, .2);
+          &:hover {
+            color: rgb(229, 131, 8);
+          }
+        }
+      }
+
+      .infomation,
+      .notification,
+      .send-parcel {
+        border-bottom: solid 1px rgba(229, 131, 8, .2);
+      }
+    }
+
+    .content {
+      flex: 1;
+      background-color: rgba(179, 168, 150, .2);
+    }
+
+    @media (max-width: 1024px) {
+      display: block;
+      .sidebar {
+        width: 100%;
+        margin: 0;
+        ul {
+          display: flex;
+          height: 60px;
+          line-height: 60px;
+          &>li {
+            height: 100%;
+            font-size: 12px;
+            span {
+              height: 100%;
+              line-height: 60px;
+            }
+          }
+        }
+        .infomation,
+        .notification,
+        .send-parcel {
+          border: none;
+        }
+      }
+    }
+  }
+
+}
