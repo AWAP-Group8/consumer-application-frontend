@@ -54,13 +54,13 @@ function MyInfomation() {
     if (mode === 'replace') {
       setParcels(list)
     } else {
-        if (list.length !== 0) {
-          setParcels(prev => prev.concat(list))
-          isLock = false
-        } else {
-          // no more data, don't fetch again
-          isLock = true
-        }
+      if (list.length !== 0) {
+        setParcels(prev => prev.concat(list))
+        isLock = false
+      } else {
+        // no more data, don't fetch again
+        isLock = true
+      }
     }
   }
 
@@ -118,6 +118,10 @@ function MyInfomation() {
             parcels.map(parcel => (
               <Card onClick={() => getDetail(parcel.tracking_number)} key={parcel.tracking_number} className='my-card'>
                 <div>
+                  <span>trackning number: </span>
+                  <span className="bolder">{parcel.tracking_number}</span>
+                </div>
+                <div>
                   <span>sender name: </span>
                   <span className="bolder">{parcel.sender_name}</span>
                 </div>
@@ -132,10 +136,6 @@ function MyInfomation() {
                 <div>
                   <span>receiver email: </span>
                   <span className="bolder">{parcel.receiver_email}</span>
-                </div>
-                <div>
-                  <span>trackning number: </span>
-                  <span className="bolder">{parcel.tracking_number}</span>
                 </div>
                 <div>
                   <span>parcel status: </span>
