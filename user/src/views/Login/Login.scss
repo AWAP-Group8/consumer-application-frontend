@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(179, 168, 150, 0.1);
 
     .right-side {
         display: flex;
@@ -17,5 +18,43 @@
         align-items: center;
         margin-top: 15px;
         margin-left: 90px;
+    }
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 6px 5px 6px -3px rgba(0, 0, 0, 0.1);
+
+    .nav-left {
+        margin: 10px;
+        width: 20%;
+        color: rgb(229, 131, 8);
+
+        .logo {
+            cursor: pointer;
+            width: 155px;
+            display: inline-block;
+            margin-left: 45px;
+            font-size: 26px;
+            font-weight: 600;
+            -webkit-text-stroke: 1px #f88;
+
+            img {
+                width: 35px;
+                margin-top: 5px;
+                margin-left: 4px;
+            }
+
+            .gogoship {
+                margin-top: -26px;
+
+                .gogo {
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                }
+            }
+        }
     }
 }

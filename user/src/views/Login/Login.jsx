@@ -2,6 +2,7 @@ import { Button, Form, Input, message } from 'antd'
 import { NavLink, useNavigate } from "react-router-dom"
 import './Login.scss'
 import axios from '../../axios'
+import logoImg from '../../images/logo.png'
 
 function Login() {
     const navigate = useNavigate()
@@ -11,7 +12,7 @@ function Login() {
         const data = await axios.get('/user/login', { params: values })
         // const { success, msg } = data
         const { success, msg } = data
-        
+
         if (success) {
             messageApi.open({
                 type: 'success',
@@ -34,6 +35,14 @@ function Login() {
     return (
         <>
             {contextHolder}
+            <div className='navbar'>
+                <div className="nav-left">
+                    <div className="logo" onClick={() => navigate('/homepage')}>
+                        <img src={logoImg} />
+                        <div className='gogoship'><span className='gogo'>GoGo</span>Ship</div>
+                    </div>
+                </div>
+            </div>
             <div className='container'>
                 <Form
                     name="basic"

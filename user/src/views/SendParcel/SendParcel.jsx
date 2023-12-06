@@ -3,6 +3,7 @@ import { Button, Form, Input, Select, message, Modal } from 'antd'
 import { useNavigate } from "react-router-dom"
 import axios from '../../axios'
 import { useEffect, useState } from 'react'
+import logoImg from '../../images/logo.png'
 
 function SendParcel() {
   const navigate = useNavigate()
@@ -75,6 +76,14 @@ function SendParcel() {
   return (
     <>
       {contextHolder}
+      <div className='navbar'>
+        <div className="nav-left">
+          <div className="logo" onClick={() => navigate('/homepage')}>
+            <img src={logoImg} />
+            <div className='gogoship'><span className='gogo'>GoGo</span>Ship</div>
+          </div>
+        </div>
+      </div>
       <div className="container">
         <Form
           name="basic"

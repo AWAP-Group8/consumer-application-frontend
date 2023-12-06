@@ -2,6 +2,7 @@ import { Button, Form, Input, message } from 'antd'
 import { NavLink, useNavigate } from "react-router-dom"
 import './Register.scss'
 import axios from '../../axios'
+import logoImg from '../../images/logo.png'
 
 function Register() {
   const navigate = useNavigate()
@@ -30,6 +31,14 @@ function Register() {
   return (
     <>
       {contextHolder}
+      <div className='navbar'>
+        <div className="nav-left">
+          <div className="logo" onClick={() => navigate('/homepage')}>
+            <img src={logoImg} />
+            <div className='gogoship'><span className='gogo'>GoGo</span>Ship</div>
+          </div>
+        </div>
+      </div>
       <div className='container'>
         <Form
           name="basic"
