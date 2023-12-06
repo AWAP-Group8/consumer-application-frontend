@@ -5,6 +5,7 @@ import { SearchOutlined } from '@ant-design/icons'
 import Icon, { BellOutlined, InboxOutlined, ProfileOutlined, UserDeleteOutlined, RightOutlined } from '@ant-design/icons';
 import './HomePage.scss'
 import axios from '../../axios'
+import transformTime from '../../utils/transformTime'
 
 function HomePage() {
   const navigate = useNavigate()
@@ -28,21 +29,21 @@ function HomePage() {
 
   const deleAccount = async () => {
     confirm({
-        title: 'Do you Want to delete account?',
-        centered: true,
-        onOk: async () => {
-            const { msg } = await axios.post('/user/delete')
-            messageApi
-              .open({
-                type: 'success',
-                content: msg,
-                duration: 1
-              })
-              .then(() => {
-                localStorage.clear()
-                navigate('/', { replace: true })
-              })
-        }
+      title: 'Do you Want to delete account?',
+      centered: true,
+      onOk: async () => {
+        const { msg } = await axios.post('/user/delete')
+        messageApi
+          .open({
+            type: 'success',
+            content: msg,
+            duration: 1
+          })
+          .then(() => {
+            localStorage.clear()
+            navigate('/', { replace: true })
+          })
+      }
     })
   }
 
@@ -80,6 +81,8 @@ function HomePage() {
                   <Icon component={RightOutlined} />
                 </span>
               </li>
+            </ul>
+            <ul className="link-container-right" >
               <li className="send-parcel" onClick={() => navigate('/sendparcel')}>
                 <span className='icon'>
                   <Icon component={InboxOutlined} />
@@ -89,8 +92,6 @@ function HomePage() {
                   <Icon component={RightOutlined} />
                 </span>
               </li>
-            </ul>
-            <ul className="link-container-right" >
               <li className="deletion" onClick={deleAccount}>
                 <span className='icon'>
                   <Icon component={UserDeleteOutlined} />
@@ -111,6 +112,10 @@ function HomePage() {
         >
           <Card className='my-card'>
             <div>
+              <span>trackning number: </span>
+              <span className="bolder">{parcel.tracking_number}</span>
+            </div>
+            <div>
               <span>sender name: </span>
               <span className="bolder">{parcel.sender_name}</span>
             </div>
@@ -127,12 +132,16 @@ function HomePage() {
               <span className="bolder">{parcel.receiver_email}</span>
             </div>
             <div>
-              <span>trackning number: </span>
-              <span className="bolder">{parcel.tracking_number}</span>
-            </div>
-            <div>
               <span>parcel status: </span>
               <span className="bolder">{parcel.parcel_status}</span>
+            </div>
+            <div>
+              <span>arrive time: </span>
+              <span className="bolder">{transformTime(parcel.arrive_time)}</span>
+            </div>
+            <div>
+              <span>pickup time: </span>
+              <span className="bolder">{transformTime(parcel.pickup_time)}</span>
             </div>
           </Card>
         </Modal>
