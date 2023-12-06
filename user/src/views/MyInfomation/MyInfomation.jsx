@@ -164,6 +164,10 @@ function MyInfomation() {
             parcelHistories.map(parcel => (
               <Card className='my-card' key={parcel.id}>
                 <div>
+                  <span>trackning number: </span>
+                  <span className="bolder">{parcel.tracking_number}</span>
+                </div>
+                <div>
                   <span>sender name: </span>
                   <span className="bolder">{parcel.sender_name}</span>
                 </div>
@@ -178,10 +182,6 @@ function MyInfomation() {
                 <div>
                   <span>receiver email: </span>
                   <span className="bolder">{parcel.receiver_email}</span>
-                </div>
-                <div>
-                  <span>trackning number: </span>
-                  <span className="bolder">{parcel.tracking_number}</span>
                 </div>
                 <div>
                   <span>parcel status: </span>
