@@ -2,13 +2,9 @@ name: Run Tests
 
 on:
   push:
-    branches:
-      - Ruimin2023
     paths:
       - 'user/**'
   pull_request:
-    branches:
-      - Ruimin2023
     paths:
       - 'user/**'
 
