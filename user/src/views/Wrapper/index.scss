@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+
   .navbar {
     width: 100%;
     display: flex;
@@ -9,7 +10,7 @@
     box-shadow: 6px 5px 6px -3px rgba(0, 0, 0, 0.2);
 
     .nav-left {
-      margin: 10px;
+      margin: 5px;
       width: 20%;
       color: rgb(229, 131, 8);
 
@@ -53,6 +54,7 @@
       ul {
         height: 88px;
         line-height: 98px;
+
         &>li {
           cursor: pointer;
           text-align: center;
@@ -61,6 +63,7 @@
           font-size: 18px;
           font-weight: 600;
           background-color: rgba(179, 168, 150, .2);
+
           &:hover {
             color: rgb(229, 131, 8);
           }
@@ -81,22 +84,27 @@
 
     @media (max-width: 1024px) {
       display: block;
+
       .sidebar {
         width: 100%;
         margin: 0;
+
         ul {
           display: flex;
           height: 60px;
           line-height: 60px;
+
           &>li {
             height: 100%;
             font-size: 12px;
+
             span {
               height: 100%;
               line-height: 60px;
             }
           }
         }
+
         .infomation,
         .notification,
         .send-parcel {
