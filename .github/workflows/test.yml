@@ -3,10 +3,10 @@ name: Run Tests
 on:
   push:
     paths:
-      - 'user/**'
+      - '/**'
   pull_request:
     paths:
-      - 'user/**'
+      - '/**'
 
 jobs:
   test:
