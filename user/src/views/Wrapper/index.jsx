@@ -11,21 +11,21 @@ function Wrapper() {
   const { confirm } = Modal
   const deleAccount = async () => {
     confirm({
-        title: 'Do you Want to delete account?',
-        centered: true,
-        onOk: async () => {
-            const { msg } = await axios.post('/user/delete')
-            messageApi
-              .open({
-                type: 'success',
-                content: msg,
-                duration: 1
-              })
-              .then(() => {
-                localStorage.clear()
-                navigate('/', { replace: true })
-              })
-        }
+      title: 'Do you want to delete account?',
+      centered: true,
+      onOk: async () => {
+        const { msg } = await axios.post('/user/delete')
+        messageApi
+          .open({
+            type: 'success',
+            content: msg,
+            duration: 1
+          })
+          .then(() => {
+            localStorage.clear()
+            navigate('/', { replace: true })
+          })
+      }
     })
   }
   return (
