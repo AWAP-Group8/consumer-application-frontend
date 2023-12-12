@@ -1,33 +1,24 @@
 # consumer-application-frontend
 
-## The project developers: 
-The project is being worked on by Oulu University of Applied Sciences (OAMK) second-year information technology students and we have been working together in the whole project:
-  - `Hu Yiming HuYiming2023` (HuYiming) (github.com)
-  - `Zhenni Pan ZhenniPan1213` (ZHENNI PAN) (github.com)
-  - `Ruimin Luo ruimin01` (github.com)
-  - `Shamima Shammi Shammioamk` (Shamima Shammi) (github.com)
-
 ## Introduction of the project: 
 The GoGoShip is a web-based application that simulates an automated parcel delivery locker system. The system includes applications for `consumer users`, `delivery drivers`, a `parcel locker touchscreen simulator`, and a `parcel generator "robot"`. Parcels are transported more efficiently from senders to receivers with the help of a parcel delivery service, guaranteeing prompt and safe delivery. These services provide easy door-to-door solutions for both consumers and corporations by utilizing a network of carriers. This test plan outlines the testing approach, test cases, and requirements for ensuring the system's functionality, performance, and security.  
 
-## Description of the project work:
-The project was created using the Agile software development methodology, and it was implemented using the Kanban framework template included in GitHub Projects. Our team has maintained continuous communication throughout the project, and it has advanced according to plan. Our team has been using Teams to communicate remotely and on campus equally. Additionally, we have been able to attend the weekly teacher meetings. In general, our team has demonstrated self-organization, communication, and the ability to produce applications that are functional and meet project criteria.
-
 ## Technologies used in the project:
-### •	User Interface: 
+### User Interface: 
    We designed a draft in notebook pen and tried to proceed accordingly for save time.
-### •	Front-end:
-   `React.js` `Framework`
-### •	Back-end:
+### Front-end:
+   - `React.js`
+   - `Framework`
+### Back-end:
    - `Node.js`
    - `Express.js`
    - `Axios.js`
-### •	Database:
-   `MySQL`
-### •	Deployment:
+### Database:
+   - `MySQL`
+### Deployment:
    - `Microsoft Azure Cloud Service`
    - `Render Service`
-### •	Testing:
+### Testing:
    - `Selenium`
    - `Postman`
    - `JIRA`
@@ -106,4 +97,3 @@ For deployment, we use Render Service.
    - `node index.js`
    - `cd ..`
    - `npm start or yarn start`
-
