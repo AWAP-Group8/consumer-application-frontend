@@ -23,20 +23,20 @@ Additionally, we have been able to attend the weekly teacher meetings. In genera
 •	User Interface: We designed a draft in notebook pen and tried to proceed accordingly for save time.
  
 •	Front-end:
-   React.js Framework
+   React.js Framework
 •	Back-end:
-   Node.js
-   Express.js
-   Axios.js
+   Node.js
+   Express.js
+   Axios.js
 •	Database:
-  	MySQL
+  	MySQL
 •	Deployment:
-  	Microsoft Azure Cloud Service
-  	Render Service
+  	Microsoft Azure Cloud Service
+  	Render Service
 •	Testing:
-  	Selenium
-  	Postman
-  	JIRA
+  	Selenium
+  	Postman
+  	JIRA
 
 ## Implementation tools for the Project:
 •	Version Control System: Git & GitHub
@@ -50,9 +50,9 @@ Additionally, we have been able to attend the weekly teacher meetings. In genera
 
 ## Project Interface Description:
 In this project, three parts of the front-end portion have been worked such as consumer user’s application, driver application and touchscreen view. For these three parts, we developed one backend and store date in database. We create a parcel generator robot, which shows how a parcel can be automatically created. We also use testing. 
-  	Consumer user application:
-   This part we have added register and login functionality for users. After login, a user can create parcel according to his/her needs, delete own account, track parcels, view the history of receiving or sending parcels and users also receive reminders when there is a parcel waiting to be picked up. 
-![image](https://github.com/AWAP-Group8/consumer-application-frontend/assets/143256533/5fc54f26-6523-44f4-be00-e5fb274360a0)
+
+## Consumer user application:
+This part we have added register and login functionality for users. After login, a user can create parcel according to his/her needs, delete own account, track parcels, view the history of receiving or sending parcels and users also receive reminders when there is a parcel waiting to be picked up. 
 
 ## Testing: 
 In the automated testing phase, the front-end React application underwent testing for two consumer functionalities: user registration and login. The back-end API was tested for three endpoints, covering registration, login, and account deletion. Additionally, automated tests were conducted for rendering components related to the touchscreen functionality.
@@ -71,27 +71,27 @@ Step 1:
   
 Step 2:
   Install the following dependencies:
-    	Axios.js
-    	Bootstrap
-    	react
-    	React-dom
-    	React-router-dom
-    	Stream-http
-    	Stream-browserify
+    Axios.js
+    Bootstrap
+    react
+    React-dom
+    React-router-dom
+    Stream-http
+    Stream-browserify
     
 Step 3:
   Go to the server folder and do: npm init-y and npm install express.
   Install the following dependencies:
-    	Chai
-    	Chai-http
-    	Mocha
-    	Cors
-    	Dotenv
-    	Express
-    	Express-jwt
-    	Jsonwebtoken
-    	Mysql 
-    	Nodemailer
+    Chai
+    Chai-http
+    Mocha
+    Cors
+    Dotenv
+    Express
+    Express-jwt
+    Jsonwebtoken
+    Mysql 
+    Nodemailer
 
 Step 4:
   Create local database: Start mysql and create a database.js file in the server folder and modify the “aaa” portion as needed:
@@ -103,6 +103,7 @@ Step 4:
     database: “aaa”
     });
     module.exports = connection;
+    
 Step 5:
   When start application, run the following command:
     cd server
