@@ -28,15 +28,15 @@ Additionally, we have been able to attend the weekly teacher meetings. In genera
    Node.js
    Express.js
    Axios.js
-### •	Database：
+### •	Database:
    MySQL
 ### •	Deployment:
    Microsoft Azure Cloud Service
-  	Render Service
+   Render Service
 ### •	Testing:
-  	Selenium
-  	Postman
-  	JIRA
+   Selenium
+   Postman
+   JIRA
 
 ## Implementation tools for the Project:
 •	Version Control System: Git & GitHub
