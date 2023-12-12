@@ -28,10 +28,10 @@ Additionally, we have been able to attend the weekly teacher meetings. In genera
    Node.js
    Express.js
    Axios.js
-### •	Database:
-  	MySQL
+### •	Database：
+   MySQL
 ### •	Deployment:
-  	Microsoft Azure Cloud Service
+   Microsoft Azure Cloud Service
   	Render Service
 ### •	Testing:
   	Selenium
@@ -66,10 +66,10 @@ For deployment, we use Render Service.
   ### •   Consumer users: https://consumer-application-frontend.onrender.com/
 
 ## How to install and use this Application:
-Step 1:
+### Step 1:
   Clone the project form the project repository.
   
-Step 2:
+### Step 2:
   Install the following dependencies:
     Axios.js
     Bootstrap
@@ -79,7 +79,7 @@ Step 2:
     Stream-http
     Stream-browserify
     
-Step 3:
+### Step 3:
   Go to the server folder and do: npm init-y and npm install express.
   Install the following dependencies:
     Chai
@@ -93,7 +93,7 @@ Step 3:
     Mysql 
     Nodemailer
 
-Step 4:
+### Step 4:
   Create local database: Start mysql and create a database.js file in the server folder and modify the “aaa” portion as needed:
     const mysql = require(“mysql”)
     const connection = mysql.createConnection({
@@ -104,7 +104,7 @@ Step 4:
     });
     module.exports = connection;
     
-Step 5:
+### Step 5:
   When start application, run the following command:
     cd server
     node index.js
