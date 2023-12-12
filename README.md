@@ -51,7 +51,7 @@ Additionally, we have been able to attend the weekly teacher meetings. In genera
 ## Project Interface Description:
 In this project, three parts of the front-end portion have been worked such as consumer user’s application, driver application and touchscreen view. For these three parts, we developed one backend and store date in database. We create a parcel generator robot, which shows how a parcel can be automatically created. We also use testing. 
 
-## Consumer user application:
+### Consumer user application:
 This part we have added register and login functionality for users. After login, a user can create parcel according to his/her needs, delete own account, track parcels, view the history of receiving or sending parcels and users also receive reminders when there is a parcel waiting to be picked up. 
 
 ## Testing: 
@@ -62,8 +62,8 @@ Link of this Test Document:  https://github.com/AWAP-Group8/Test-plan-document.g
 For deployment, we use Render Service.
 
 ## GitHub Link: https://github.com/orgs/AWAP-Group8/repositories
-Front-end application links:
-  •	Consumer users: https://consumer-application-frontend.onrender.com/
+## Front-end application links:
+  ### •   Consumer users: https://consumer-application-frontend.onrender.com/
 
 ## How to install and use this Application:
 Step 1:
