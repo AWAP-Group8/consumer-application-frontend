@@ -20,20 +20,19 @@ Our team has maintained continuous communication throughout the project, and it 
 Additionally, we have been able to attend the weekly teacher meetings. In general, our team has demonstrated self-organization, communication, and the ability to produce applications that are functional and meet project criteria.
 
 ## Technologies used in the project:
-•	User Interface: We designed a draft in notebook pen and tried to proceed accordingly for save time.
- 
-•	Front-end:
+User Interface: We designed a draft in notebook pen and tried to proceed accordingly for save time.
+Front-end:
    React.js Framework
-•	Back-end:
+Back-end:
    Node.js
    Express.js
    Axios.js
-•	Database:
+Database:
   	MySQL
-•	Deployment:
+Deployment:
   	Microsoft Azure Cloud Service
   	Render Service
-•	Testing:
+Testing:
   	Selenium
   	Postman
   	JIRA
