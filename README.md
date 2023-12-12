@@ -64,8 +64,8 @@ For deployment, we use Render Service.
 ## GitHub Link: 
    `https://github.com/orgs/AWAP-Group8/repositories`
 ## Front-end application links:
-  ### •   Consumer users: 
-     `https://consumer-application-frontend.onrender.com/`
+  ### Consumer users: 
+   `https://consumer-application-frontend.onrender.com/`
 
 ## How to install and use this Application:
 ### Step 1:
